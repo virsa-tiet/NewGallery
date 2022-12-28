@@ -5,9 +5,13 @@
 	box-sizing: border-box;
 }
 nav{
-    z-index: 2;
-      position:fixed;
-  }
+	margin-top: -1000px;
+   z-index: 2;
+   position: top;
+   top: -241px;
+   margin-right: -1200px;
+   width: 2000px;
+ }
   .navbar{
   
     text-align:center !important;
