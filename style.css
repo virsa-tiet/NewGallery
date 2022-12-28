@@ -1,0 +1,94 @@
+/* Applying Global CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+nav{
+    z-index: 2;
+      position:fixed;
+  }
+  .navbar{
+  
+    text-align:center !important;
+    background-color: black;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+  }
+  .navbar-dark{
+      background-color: rgb(16,16,16);
+  
+  }
+  .nav-link:hover{
+      color: rgb(255,255,255)!important;
+  }
+  .dropdown-item:hover{
+      color: rgb(55, 53, 52)!important;
+  }
+  .navbar{
+  
+    text-align:center !important;
+    background-color: black;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+  }
+
+/* Centering the content of whole body */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #000;
+}
+
+/* Adding transform-style CSS
+	property to the boxes */
+.box {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	transform-style: preserve-3d;
+	animation: animate 20s linear infinite;
+}
+
+/* Adding keyframes for animation */
+@keyframes animate {
+	0% {
+		transform: perspective(1000px) rotateY(0deg);
+	}
+	100% {
+		transform: perspective(1000px) rotateY(360deg);
+	}
+}
+
+/* Adding CSS to all the span
+	tags for animation */
+.box span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: inline;
+	box-sizing: border-box;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	transform:
+	rotateY(calc(var(--i) * 60deg)) translateZ(400px);
+	-webkit-box-reflect:
+below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+/* Adding object-fit CSS property to all the images */
+.box span img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 250px;
+	padding: 0%;
+	margin: 0%;
+	width: 250px;
+	object-fit: cover;;
+}
+
