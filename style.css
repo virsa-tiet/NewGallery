@@ -1,16 +1,17 @@
 /* Applying Global CSS */
 * {
-	margin: 0;
+	margin: 0 !important;
 	padding: 0;
 	box-sizing: border-box;
+	align-items: center;
 }
 nav{
-	margin-top: -1000px;
+   margin-top: -3000px !important;
    z-index: 2;
    position: top;
-   top: -241px;
-   margin-right: -1200px;
-   width: 2000px;
+   width: 2600px;
+   
+  
  }
   .navbar{
   
@@ -20,15 +21,17 @@ nav{
     font-family: "Poppins", sans-serif;
   }
   .navbar-dark{
-      background-color: rgb(16,16,16);
-  
-  }
-  .nav-link:hover{
-      color: rgb(255,255,255)!important;
-  }
-  .dropdown-item:hover{
-      color: rgb(55, 53, 52)!important;
-  }
+    background-color: rgb(16,16,16);
+
+}
+.nav-link:hover{
+    color: rgb(255, 255, 255)!important;
+
+}
+.dropdown-item:hover{
+    color: rgb(55, 53, 52)!important;
+
+}
   .navbar{
   
     text-align:center !important;
